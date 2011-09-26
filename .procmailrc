@@ -36,7 +36,3 @@ mail/logs-root
 :0
 * ^TO.root@
 mail/logs-root
-
-:0
-* ^TO.nagios-alerts@ph.ed.ac.uk
-mail/logs-nagios
