@@ -9,10 +9,6 @@
 * ^Subject:.*Tripwire*
 mail/logs-tripwire
 
-:0 
-* ^Subject:.*sl5-files*
-mail/logs-sl5files
-
 :0
 * ^Subject:.*LCFG-PHYS*
 mail/commits
