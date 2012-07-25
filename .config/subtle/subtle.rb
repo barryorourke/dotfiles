@@ -1,24 +1,23 @@
 # General {{{
-
-set :step, 5
-set :snap, 10
-set :gravity, :center
-set :urgent, false
-set :resize, false
-set :tiling, false
-set :font, "xft:Bitstream Vera Sans Mono-9"
-set :separator, "|"
+set :increase_step, 5
+set :border_snap, 10
+set :default_gravity, :center
+set :urgent_dialogs, false
+set :honor_size_hints, false
+set :gravity_tiling, false
+set :click_to_focus, false
+set :skip_pointer_warp, false
+set :skip_urgent_warp, false
 #}}}
 
 # Screens {{{
-
 screen 1 do
-  top    [ :views, :title, :spacer, :keychain, :tray, :sublets ]
+  top    [ :views, :title, :spacer, :keychain, :spacer, :tray, :sublets ]
   bottom [ ]
 end
 
 screen 2 do
-  top    [ :views ]
+  top    [ :views, :title, :spacer ]
   bottom [ ]
 end
 #}}}
@@ -26,8 +25,10 @@ end
 # Styles {{{
 style :all do
   background  "#1a1a1a"
-  border      0
-  padding     2, 8
+  icon        "#757575"
+  border      "#ffffff", 0
+  padding     2,8
+  font        "xft:Bitstream Vera Sans Mono-9"
 end
 
 style :title do
@@ -82,7 +83,7 @@ style :views do
     border_bottom  "#6600CC", 3
   end
 end
-# }}}
+#}}}
 
 # Gravities {{{
 
@@ -118,18 +119,18 @@ gravity :bottom_right33, [  50,  67,  50,  33 ]
 # Grabs {{{
 
 # Jump to view1, view2, ...
-grab "W-1", :ViewJump1
-grab "W-2", :ViewJump2
-grab "W-3", :ViewJump3
-grab "W-4", :ViewJump4
-grab "W-5", :ViewJump5
+grab "W-S-1", :ViewJump1
+grab "W-S-2", :ViewJump2
+grab "W-S-3", :ViewJump3
+grab "W-S-4", :ViewJump4
+grab "W-S-5", :ViewJump5
 
 # Switch current view
-grab "W-S-1", :ViewSwitch1
-grab "W-S-2", :ViewSwitch2
-grab "W-S-3", :ViewSwitch3
-grab "W-S-4", :ViewSwitch4
-grab "W-S-5", :ViewSwitch5
+grab "W-1", :ViewSwitch1
+grab "W-2", :ViewSwitch2
+grab "W-3", :ViewSwitch3
+grab "W-4", :ViewSwitch4
+grab "W-5", :ViewSwitch5
 
 # Select next and prev view */
 grab "KP_Add",      :ViewNext
@@ -169,7 +170,7 @@ grab "W-s", :WindowStick
 grab "W-equal", :WindowZaphod
 
 # Raise window
-grab "W-w", :WindowRaise
+grab "W-r", :WindowRaise
 
 # Lower window
 grab "W-a", :WindowLower
@@ -193,6 +194,23 @@ grab "W-KP_6", [ :right,        :right66,        :right33        ]
 grab "W-KP_1", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
 grab "W-KP_2", [ :bottom,       :bottom66,       :bottom33       ]
 grab "W-KP_3", [ :bottom_right, :bottom_right66, :bottom_right33 ]
+
+# In case no numpad is available e.g. on notebooks
+#grab "W-q", [ :top_left,     :top_left66,     :top_left33     ]
+#grab "W-w", [ :top,          :top66,          :top33          ]
+#grab "W-e", [ :top_right,    :top_right66,    :top_right33    ]
+#grab "W-a", [ :left,         :left66,         :left33         ]
+#grab "W-s", [ :center,       :center66,       :center33       ]
+#grab "W-d", [ :right,        :right66,        :right33        ]
+#
+# QUERTZ
+#grab "W-y", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+#
+# QWERTY
+#grab "W-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+#
+#grab "W-x", [ :bottom,       :bottom66,       :bottom33       ]
+#grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
 # Exec programs
 grab "W-Return", "urxvt"
@@ -299,5 +317,7 @@ sublet :clock do
   format_string "%d/%m/%Y %H:%M:%S "
 end
 #}}}
+
+
 
 # vim:ts=2:bs=2:sw=2:et:fdm=marker

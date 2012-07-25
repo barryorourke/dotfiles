@@ -9,10 +9,6 @@
 * ^Subject:.*Tripwire*
 mail/logs-tripwire
 
-:0
-* ^Subject:.*LCFG-PHYS*
-mail/commits
-
 :0 
 * ^TO.security@ph.ed.ac.uk
 mail/logs
