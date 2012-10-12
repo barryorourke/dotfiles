@@ -5,4 +5,5 @@ set mouse-=a
 set noautoindent
 set nosmartindent
 set nocindent  
+set paste
 :nnoremap <F8> :setl noai nocin nosi inde=<CR>
