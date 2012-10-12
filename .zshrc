@@ -65,9 +65,15 @@ alias -s txt=vim
 alias -g ...='../..'
 alias -g ....='../../..'
 
-alias ls='ls -l --color=auto -F'
 
-alias la='ls -la --color=auto -F --group-directories-first'
+if [ "$(uname)" = "Darwin" ]
+then
+  alias ls='ls -l -G'
+  alias la='ls -la -G'
+else
+  alias ls='ls -l --color=auto -F'
+  alias la='ls -la --color=auto -F --group-directories-first'
+fi
 
 # enviromental variables #
 
