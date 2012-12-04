@@ -1,78 +1,39 @@
-# .zshrc 
-# Barry O'Rourke <barry@orodor.org.uk>
-# 12/10/12
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
 
-# zsh builtin stuff #
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="barryorourke"
 
-HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-setopt appendhistory autocd extendedglob nomatch notify
-unsetopt beep
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
-zstyle :compinstall filename '~/.zshrc'
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
 
-bindkey -e
-bindkey "\e[1~" beginning-of-line
-bindkey "\e[4~" end-of-line
-bindkey "\e[5~" beginning-of-history
-bindkey "\e[6~" end-of-history
-bindkey "\e[3~" delete-char
-bindkey "\e[2~" quoted-insert
-bindkey "\e[5C" forward-word
-bindkey "\eOc" emacs-forward-word
-bindkey "\e[5D" backward-word
-bindkey "\eOd" emacs-backward-word
-bindkey "\e\e[C" forward-word
-bindkey "\e\e[D" backward-word
-bindkey "^H" backward-delete-word
-bindkey "\e[8~" end-of-line
-bindkey "\e[7~" beginning-of-line
-bindkey "\eOH" beginning-of-line
-bindkey "\eOF" end-of-line
-bindkey "\e[H" beginning-of-line
-bindkey "\e[F" end-of-line
-bindkey '^i' expand-or-complete-prefix
+# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-autoload -Uz compinit
-compinit
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
-# lazy ssh host auto completion #
+# Uncomment following line if you want to disable autosetting terminal title.
+DISABLE_AUTO_TITLE="true"
 
-knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
-zstyle ':completion:*:(ssh|scp|sftp):*' hosts $knownhosts
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
 
-# aliases #
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(extract github svn)
 
-alias vi='vim'
-alias df='df -h'
-alias du='du -h'
-alias rm='rm -iv'
-alias pine='alpine'
+source $ZSH/oh-my-zsh.sh
 
-alias ng='ypcat -k netgroup | grep'
-alias nu='ypcat -k passwd | grep'
-
-alias -s txt=vim
-
-alias -g ...='../..'
-alias -g ....='../../..'
-
-
-if [ "$(uname)" = "Darwin" ]
-then
-  alias ls='ls -l -G'
-  alias la='ls -la -G'
-else
-  alias ls='ls -l --color=auto -F'
-  alias la='ls -la --color=auto -F --group-directories-first'
-fi
-
-# enviromental variables #
-
-export EDITOR=vim
-export SVN_EDITOR=vim
-export BROWSER=google-chrome;
-export TERM=xterm-color
-export PROMPT='[%n@%m %c]%# '
+# Customize to your needs...
