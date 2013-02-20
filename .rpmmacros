@@ -3,9 +3,9 @@
 %vendor                 School of Physics & Astronomy
 %unit			phys
 
-%_topdir                /scratch/rpmbuild
+%_topdir                /Home/borourke/rpmbuild
 
-%_rpmtopdir             %{_topdir}/
+%_rpmtopdir             %{_topdir}
 %_builddir              %{_topdir}/BUILD
 %_tmppath               %{_topdir}/BUILDROOT
 %_rpmdir                %{_topdir}/RPMS

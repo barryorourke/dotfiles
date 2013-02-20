@@ -22,6 +22,10 @@ mail/logs
 mail/logs
 
 :0
+* ^Subject:.*booted*
+mail/logs-root
+
+:0
 * ^TO.root@ph.ed.ac.uk
 mail/logs-root
 

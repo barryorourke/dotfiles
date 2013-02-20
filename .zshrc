@@ -37,3 +37,5 @@ plugins=(extract github svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+alias ls='ls --color=tty -l --group-directories-first'
