@@ -38,4 +38,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-alias ls='ls --color=tty -l --group-directories-first'
+if [ "$(uname)" == "Darwin" ]
+then
+  alias ls='ls -lG'
+else
+  alias ls='ls --color=tty -l --group-directories-first'
+fi
