@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-if [ "$(uname)" == "Darwin" ]
+if [ "$(uname)" = "Darwin" ]
 then
   alias ls='ls -lG'
 else
