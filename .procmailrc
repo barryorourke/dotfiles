@@ -18,12 +18,12 @@ mail/logs
 mail/logs
 
 :0
-* ^Subject:.*AMANDA*
-mail/logs
+* ^Subject:.*Machine*
+mail/logs-root
 
 :0
-* ^Subject:.*booted*
-mail/logs-root
+* ^Subject:.*AMANDA*
+mail/logs
 
 :0
 * ^TO.root@ph.ed.ac.uk

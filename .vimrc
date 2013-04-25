@@ -6,4 +6,4 @@ set noautoindent
 set nosmartindent
 set nocindent  
 set paste
-:nnoremap <F8> :setl noai nocin nosi inde=<CR>
+:nnoremap <F8> :set syn=cpp
