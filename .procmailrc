@@ -5,10 +5,6 @@
 #VERBOSE=yes
 #LOGABSTRACT=all
 
-:0
-* ^Subject:.*Tripwire*
-mail/logs-tripwire
-
 :0 
 * ^TO.security@ph.ed.ac.uk
 mail/logs
@@ -16,6 +12,10 @@ mail/logs
 :0 
 * ^TO.arpwatch@ph.ed.ac.uk
 mail/logs
+
+:0
+* ^Subject:.*Tripwire*
+mail/logs-tripwire
 
 :0
 * ^Subject:.*Machine*
