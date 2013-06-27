@@ -1,9 +1,14 @@
-#LOGFILE=/Home/borourke/procmail.log
+LOGFILE=/Home/borourke/procmail.log
 #SHELL=/bin/sh
-#LOG="--- Logging for ${LOGNAME}, path is ${PATH}, pwd is ${PWD}, home is ${HOME
-#}, shell is ${SHELL}"
-#VERBOSE=yes
-#LOGABSTRACT=all
+LOG="--- Logging for ${LOGNAME}, path is ${PATH}, pwd is ${PWD}, home is ${HOME
+}, shell is ${SHELL}"
+VERBOSE=yes
+LOGABSTRACT=all
+
+
+:0
+* ^Subject:.*Tripwire*
+mail/logs-tripwire
 
 :0 
 * ^TO.security@ph.ed.ac.uk
@@ -14,16 +19,16 @@ mail/logs
 mail/logs
 
 :0
-* ^Subject:.*Tripwire*
-mail/logs-tripwire
-
-:0
-* ^Subject:.*Machine*
-mail/logs-root
-
-:0
 * ^Subject:.*AMANDA*
-mail/logs
+mail/logs-backups
+
+:0
+* ^TO.rsnapshot@ph.ed.ac.uk
+mail/logs-backups
+
+:0
+* ^TO.tivoli@ph.ed.ac.uk
+mail/logs-backups
 
 :0
 * ^TO.root@ph.ed.ac.uk
@@ -32,3 +37,15 @@ mail/logs-root
 :0
 * ^TO.root@
 mail/logs-root
+
+:0
+* ^TO:*-linuxes-root@ph.ed.ac.uk
+mail/logs-root
+
+:0
+* ^Subject:.*Machine*
+mail/logs-root
+
+:0
+* ^Subject:.*commit*
+mail/commits
