@@ -1,10 +1,13 @@
-LOGFILE=/Home/borourke/procmail.log
+#LOGFILE=/Home/borourke/procmail.log
 #SHELL=/bin/sh
-LOG="--- Logging for ${LOGNAME}, path is ${PATH}, pwd is ${PWD}, home is ${HOME
-}, shell is ${SHELL}"
+#LOG="--- Logging for ${LOGNAME}, path is ${PATH}, pwd is ${PWD}, home is ${HOME
+#}, shell is ${SHELL}"
 VERBOSE=yes
 LOGABSTRACT=all
 
+:0
+* ^Subject:.*Unexpected Exception occurred at arryn.ph.ed.ac.uk*
+mail/trash
 
 :0
 * ^Subject:.*Tripwire*
@@ -45,6 +48,10 @@ mail/logs-root
 :0
 * ^Subject:.*Machine*
 mail/logs-root
+
+:0
+* ^Subject:*MDP Desktop New*
+mail/commits
 
 :0
 * ^Subject:.*commit*
