@@ -1,3 +1,5 @@
+syntax on
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -12,4 +14,3 @@ au BufRead,BufNewFile *.tt set filetype=tt2
 au BufNewFile,BufRead *.ini,*/.hgrc,*/.hg/hgrc setf ini 
 autocmd BufNewFile,BufRead *.json set filetype=json
 autocmd BufNewFile,BufRead *.jsonp set filetype=json
-
