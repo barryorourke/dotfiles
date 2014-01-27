@@ -146,5 +146,3 @@ bar {
         status_command i3status
         position          top
 }
-
-exec i3status -c ~/.i3/i3status.conf | i3bar -dtop

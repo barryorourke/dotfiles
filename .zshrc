@@ -52,3 +52,6 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias vi="vim"
+
+# disable console beeps (debian)
+xset b off
