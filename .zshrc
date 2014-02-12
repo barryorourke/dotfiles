@@ -52,9 +52,3 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias vi="vim"
-<<<<<<< Updated upstream
-=======
-
-[ -d "~/.gem/ruby/2.1.0/bin" ] && export PATH=${PATH}:~/.gem/ruby/2.1.0/bin
-
->>>>>>> Stashed changes
