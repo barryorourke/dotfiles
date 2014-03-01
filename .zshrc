@@ -37,18 +37,15 @@ plugins=(vi-mode history-substring-search extract github svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-if [ "$(uname)" = "Darwin" ]
-then
-  alias ls='ls -lG'
-else
-  alias ls='ls --color=tty -l --group-directories-first'
-fi
-
-# restore ^r whilst in vi mode, I can't train my brain out of it
+# restore ^r whilst in vi mode, I can't train my brain out of it #
 bindkey -M viins '^r' history-incremental-search-backward
 bindkey -M vicmd '^r' history-incremental-search-backward
 
+# enable syntax highlighting #
 source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# lazy mode aliases #
 alias vi="vim"
+
+# gem binary path on archlinux #
+[ -d ~/.gem/ruby/2.1.0/bin ] && export PATH=${PATH}:~/.gem/ruby/2.1.0/bin
