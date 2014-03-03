@@ -32,7 +32,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode history-substring-search extract github svn)
+plugins=(vi-mode history-substring-search extract github svn rvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,5 +47,6 @@ source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # lazy mode aliases #
 alias vi="vim"
 
-# gem binary path on archlinux #
-[ -d ~/.gem/ruby/2.1.0/bin ] && export PATH=${PATH}:~/.gem/ruby/2.1.0/bin
+# add RVM path and environment #
+[ -d ~/.rvm/bin ] && export PATH=$PATH:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
