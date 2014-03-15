@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/nginx-vim-syntax"]
 	path = .vim/bundle/nginx-vim-syntax
 	url = https://github.com/evanmiller/nginx-vim-syntax
+[submodule ".vim/bundle/vim-perl"]
+	path = .vim/bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl
