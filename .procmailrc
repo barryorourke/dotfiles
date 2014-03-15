@@ -6,18 +6,18 @@ VERBOSE=yes
 LOGABSTRACT=all
 
 :0
-* ^Subject:.*Unexpected Exception occurred at arryn.ph.ed.ac.uk*
+* ^Subject:.*Unexpected Exception occurred at arryn*
 mail/trash
 
 :0
 * ^Subject:.*Tripwire*
 mail/logs-tripwire
 
-:0 
+:0
 * ^TO.security@ph.ed.ac.uk
 mail/logs
 
-:0 
+:0
 * ^TO.arpwatch@ph.ed.ac.uk
 mail/logs
 

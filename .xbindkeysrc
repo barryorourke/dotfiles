@@ -6,7 +6,7 @@
 #VolUp
 "amixer set Master 5+ unmute"
    m:0x0 + c:123
-   XF86AudioRaiseVolume 
+   XF86AudioRaiseVolume
 
 #VolMute
 "amixer set Master mute"
