@@ -1,18 +1,9 @@
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
-[submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
-[submodule ".vim/bundle/nginx-vim-syntax"]
-	path = .vim/bundle/nginx-vim-syntax
-	url = https://github.com/evanmiller/nginx-vim-syntax
-[submodule ".vim/bundle/vim-perl"]
-	path = .vim/bundle/vim-perl
-	url = https://github.com/vim-perl/vim-perl
-[submodule ".vim/bundle/vim-golang"]
-	path = .vim/bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule ".vim/bundle/vim-polyglot"]
+	path = .vim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
