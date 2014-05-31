@@ -1,6 +1,3 @@
-# set the keyboard map #
-setxkbmap gb
-
 # dbus instance #
 eval `dbus-launch --sh-syntax --exit-with-session`
 
