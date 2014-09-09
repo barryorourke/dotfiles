@@ -30,6 +30,10 @@ mail/logs-backups
 mail/logs-backups
 
 :0
+* ^TO.rsnapshot-hourly@ph.ed.ac.uk
+mail/logs-backups
+
+:0
 * ^TO.tivoli@ph.ed.ac.uk
 mail/logs-backups
 
