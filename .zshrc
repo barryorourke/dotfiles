@@ -46,7 +46,3 @@ source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # lazy mode aliases #
 alias vi="vim"
-
-# add RVM path and environment #
-[ -d ~/.rvm/bin ] && export PATH=$PATH:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
