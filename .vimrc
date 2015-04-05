@@ -6,4 +6,4 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-set paste
+let g:airline_theme='wombat'
