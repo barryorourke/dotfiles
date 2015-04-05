@@ -46,3 +46,6 @@ source ~/repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # lazy mode aliases #
 alias vi="vim"
+
+# start ssh-agent #
+eval $(ssh-agent) > /dev/null

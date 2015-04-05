@@ -23,21 +23,19 @@ Xft.dpi:96
 Xft.hinting:true
 Xft.hintstyle:hintslight
 
-! awesome cols
-
-*color8:#808080
-*color0:#666666
-*color1:#4bb5c1
-*color9:#FE4365
-*color2: #a5c14b
-*color10:#FE4365
-*color3: #FE8686
-*color11:#2797D8
-*color4: #6e6e6e
-*color12:#418179
-*color5: #8f87a1
-*color13:#9e6ffe
-*color6: #7f888a
-*color14:#c9b9b9
-*color7: #cdc673
-*color15:#f8f8f2
+*color0:	#404040
+*color8:	#505050
+*color1:	#D55986
+*color9:	#EA84A9
+*color2:	#D0EF92
+*color10:	#A5C95B
+*color3:	#FFC178
+*color11:	#E6BE74
+*color4:	#66A8EF
+*color12:	#90A7C1
+*color5:	#906479
+*color13:	#DF5784
+*color6:	#8AA7B9
+*color14:	#B7E2FB
+*color7:	#d2d2d2
+*color15:	#ffffff
