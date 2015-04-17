@@ -14,44 +14,8 @@ mail/lists
 mail/trash
 
 :0
-* ^Subject:.*rogue*
-mail/logs-rogue
-
-:0
 * ^Subject:.*Tripwire*
 mail/logs-tripwire
-
-:0
-* ^Subject:.*Fail2Ban*
-mail/logs-fail2ban
-
-:0
-* ^Subject:.*Machine*
-mail/logs-reboot
-
-:0
-* ^TO.security@ph.ed.ac.uk
-mail/logs
-
-:0
-* ^TO.arpwatch@ph.ed.ac.uk
-mail/logs
-
-:0
-* ^Subject:.*AMANDA*
-mail/logs-backups
-
-:0
-* ^TO.rsnapshot@ph.ed.ac.uk
-mail/logs-backups
-
-:0
-* ^TO.rsnapshot-hourly@ph.ed.ac.uk
-mail/logs-backups
-
-:0
-* ^TO.tivoli@ph.ed.ac.uk
-mail/logs-backups
 
 :0
 * ^TO.root@ph.ed.ac.uk
@@ -64,6 +28,34 @@ mail/logs
 :0
 * ^TO:*-linuxes-root@ph.ed.ac.uk
 mail/logs
+
+:0
+* ^TO.security@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^TO.arpwatch@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^TO.rsnapshot@ph.ed.ac.uk
+mail/logs-other
+
+:0
+* ^Subject:.*Fail2Ban*
+mail/logs-other
+
+:0
+* ^TO.rsnapshot-hourly@ph.ed.ac.uk
+mail/logs-other
+
+:0
+* ^TO.tivoli@ph.ed.ac.uk
+mail/logs-other
+
+:0
+* ^Subject:.*rogue*
+mail/logs-other
 
 :0
 * ^Subject:*MDP Desktop New*

@@ -23,19 +23,27 @@ Xft.dpi:96
 Xft.hinting:true
 Xft.hintstyle:hintslight
 
-*color0:	#404040
-*color8:	#505050
-*color1:	#D55986
-*color9:	#EA84A9
-*color2:	#D0EF92
-*color10:	#A5C95B
-*color3:	#FFC178
-*color11:	#E6BE74
-*color4:	#66A8EF
-*color12:	#90A7C1
-*color5:	#906479
-*color13:	#DF5784
-*color6:	#8AA7B9
-*color14:	#B7E2FB
-*color7:	#d2d2d2
-*color15:	#ffffff
+!black text
+*color0: #242424
+*color8: #cdb5cd
+!red text
+*color1: #bf7979
+*color9: #f4a45f
+!green text
+*color2: #97b26b
+*color10: #c5f779
+!yellow text
+*color3: #cdcda1
+*color11: #ffffaf
+!blue text
+*color4: #86a2be
+*color12: #98afd9
+!magenta text
+*color5: #d9b798
+*color13: #d7d998
+!cyan text
+*color6: #a1b5cd
+*color14: #a1b5cd
+!white
+*color7: #ffffff
+*color15: #dedede
