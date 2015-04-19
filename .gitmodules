@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-polyglot"]
 	path = .vim/bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "antigen"]
+	path = antigen
+	url = https://github.com/zsh-users/antigen
