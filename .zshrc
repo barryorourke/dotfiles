@@ -24,3 +24,9 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 
 # start ssh-agent
 eval $(ssh-agent) > /dev/null
+
+# create default directory structure if it doesn't exist
+for D in files/{documents,music,pictures,videos} tmp/{desktop,downloads}
+do
+  [ ! -d ~/${D} ] && mkdir -p ~/${D}
+done
