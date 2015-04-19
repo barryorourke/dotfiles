@@ -30,3 +30,6 @@ for D in files/{documents,music,pictures,videos} tmp/{desktop,downloads}
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
+
+# aliases
+alias tmux="tmux -2"
