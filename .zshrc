@@ -15,6 +15,7 @@ antigen bundle vi-mode
 # apply some other bundles
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
+
 # apply the changes
 antigen apply
 

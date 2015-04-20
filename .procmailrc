@@ -1,4 +1,4 @@
-LOGFILE=/Home/borourke/procmail.log
+#LOGFILE=/Home/borourke/procmail.log
 #SHELL=/bin/sh
 #LOG="--- Logging for ${LOGNAME}, path is ${PATH}, pwd is ${PWD}, home is ${HOME
 #}, shell is ${SHELL}"
@@ -6,36 +6,16 @@ VERBOSE=yes
 LOGABSTRACT=all
 
 :0
+* ^Subject:*MDP Desktop New*
+mail/commits
+
+:0
+* ^Subject:.*commit*
+mail/commits
+
+:0
 * ^TO.ceph-users@lists.ceph.com
 mail/lists
-
-:0
-* ^Subject:.*Unexpected Exception occurred at arryn*
-mail/trash
-
-:0
-* ^Subject:.*Tripwire*
-mail/logs-tripwire
-
-:0
-* ^TO.root@ph.ed.ac.uk
-mail/logs
-
-:0
-* ^TO.root@
-mail/logs
-
-:0
-* ^TO:*-linuxes-root@ph.ed.ac.uk
-mail/logs
-
-:0
-* ^TO.security@ph.ed.ac.uk
-mail/logs
-
-:0
-* ^TO.arpwatch@ph.ed.ac.uk
-mail/logs
 
 :0
 * ^TO.rsnapshot@ph.ed.ac.uk
@@ -58,9 +38,35 @@ mail/logs-other
 mail/logs-other
 
 :0
-* ^Subject:*MDP Desktop New*
-mail/commits
+* ^Subject:.*Unexpected Exception occurred at arryn*
+mail/logs-other
 
 :0
-* ^Subject:.*commit*
-mail/commits
+* ^Subject:.*Machine*
+mail/logs
+
+:0
+* ^TO.root@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^TO.root@
+mail/logs
+
+:0
+* ^TO:*-linuxes-root@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^TO.security@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^TO.arpwatch@ph.ed.ac.uk
+mail/logs
+
+:0
+* ^Subject:.*Tripwire*
+mail/logs-tripwire
+
+
