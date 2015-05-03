@@ -9,5 +9,6 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-colorscheme peachpuff
+set background=dark
+colorscheme base16-default
 let g:airline_theme='serene'
