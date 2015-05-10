@@ -1,3 +1,7 @@
+# stop tmux from changing titles
+DISABLE_AUTO_TITLE=true
+
+# use antigen to manage zsh
 source ~/repositories/dotfiles/antigen/antigen.zsh
 
 # use oh-my-zsh

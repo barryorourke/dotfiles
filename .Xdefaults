@@ -18,4 +18,4 @@ Xft.dpi:96
 Xft.hinting:true
 Xft.hintstyle:hintslight
 
-#include ~/repositories/dotfiles/colors/base16/base16-default.dark.256.xresources
+#include "/home/borourke/repositories/dotfiles/colors/base16/base16-default.dark.256.xresources"
