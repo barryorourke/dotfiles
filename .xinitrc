@@ -8,7 +8,8 @@ unclutter -root -visable &
 [ -e ~/.fehbg ] && source ~/.fehbg
 
 # bindkeys for laptop #
-xbindkeys
+
+xrdb -merge ~/.Xdefaults
 
 # start i3
 exec i3

@@ -1,1 +1,2 @@
+#!/bin/sh
 feh  --bg-scale '/home/borourke/repositories/dotfiles/files/wallpaper.jpg' 
