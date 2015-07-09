@@ -22,6 +22,10 @@ mail/lists
 mail/lists
 
 :0
+* ^TO.CASTEP@JISCMAIL.AC.UK
+mail/lists
+
+:0
 * ^TO.rsnapshot@ph.ed.ac.uk
 mail/logs-other
 
@@ -35,7 +39,7 @@ mail/logs-other
 
 :0
 * ^TO.tivoli@ph.ed.ac.uk
-mail/logs-other
+mail/logs
 
 :0
 * ^Subject:.*rogue*
