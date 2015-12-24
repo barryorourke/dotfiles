@@ -7,8 +7,16 @@ unclutter -root -visable &
 # set the background #
 [ -e ~/.fehbg ] && source ~/.fehbg
 
-# bindkeys for laptop #
+# network manager applet
+nm-applet &
 
+# screensaver
+xss-lock -- i3lock -n -c 000000 &
+
+# set up multimedia buttons
+xbindkeys &
+
+# sort out .Xdefaults
 xrdb -merge ~/.Xdefaults
 
 # start i3
