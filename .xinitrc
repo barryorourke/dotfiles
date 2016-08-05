@@ -2,7 +2,7 @@
 eval `dbus-launch --sh-syntax --exit-with-session`
 
 # hide mouse when not in use #
-unclutter -root -visable &
+unclutter &
 
 # set the background #
 [ -e ~/.fehbg ] && source ~/.fehbg
