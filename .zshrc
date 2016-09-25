@@ -13,6 +13,7 @@ antigen theme ~/repositories/dotfiles/oh-my-zsh/themes barryorourke --no-local-c
 # apply some oh-my-zsh bundles
 antigen bundle extract
 antigen bundle git
+antigen bundle golang
 antigen bundle history-substring-search
 antigen bundle vi-mode
 
@@ -31,10 +32,13 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 eval $(ssh-agent) > /dev/null
 
 # create default directory structure if it doesn't exist
-for D in files/{documents,music,pictures,videos} tmp/{desktop,downloads}
+for D in files/{documents,music,pictures,videos} tmp/{desktop,downloads} go
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
 
 # aliases
 alias tmux="tmux -2"
+
+# Go!
+export GOPATH="$HOME/go"

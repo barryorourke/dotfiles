@@ -50,14 +50,6 @@ mail/logs-other
 mail/logs-other
 
 :0
-* ^Subject:.*Machine*
-mail/logs
-
-:0
-* ^Subject:.*Tripwire*
-mail/logs-other
-
-:0
 * ^TO.root@ph.ed.ac.uk
 mail/logs
 

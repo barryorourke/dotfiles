@@ -1,6 +1,8 @@
 set $mod Mod4
 
-font pango:DejaVu Sans Mono 8
+force_xinerama yes
+
+font pango:DejaVu Sans Mono-8
 
 set $blue #005588
 set $gray1 #484848
@@ -20,7 +22,7 @@ bindsym $mod+Return exec /usr/bin/urxvt
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+x exec /usr/bin/dmenu_run
+bindsym $mod+x exec /usr/bin/dmenu_run -fn 'DejaVu Sans Mono-12'
 
 # change focus
 bindsym $mod+j focus left
