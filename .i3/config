@@ -20,11 +20,7 @@ bindsym $mod+Return exec /usr/bin/urxvt
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-<<<<<<< HEAD
-bindsym $mod+x exec /usr/bin/dmenu_run -fn 'DejaVu Sans Mono-12'
-=======
 bindsym $mod+x exec /usr/bin/dmenu_run -fn 'Droid Sans Mono-12'
->>>>>>> 361d4c6ebe5379b29c0fcce9e39f77e0e92f0369
 
 # change focus
 bindsym $mod+j focus left
