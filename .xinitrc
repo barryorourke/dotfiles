@@ -2,13 +2,22 @@
 eval `dbus-launch --sh-syntax --exit-with-session`
 
 # hide mouse when not in use #
-unclutter -root -visable &
+unclutter &
 
 # set the background #
 [ -e ~/.fehbg ] && source ~/.fehbg
 
-# bindkeys for laptop #
-xbindkeys
+# network manager applet
+nm-applet &
+
+# screensaver
+xss-lock -- i3lock -n -c 000000 &
+
+# set up multimedia buttons
+xbindkeys &
+
+# sort out .Xdefaults
+xrdb -merge ~/.Xdefaults
 
 # start i3
 exec i3

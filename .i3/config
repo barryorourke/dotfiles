@@ -1,8 +1,6 @@
 set $mod Mod4
 
-force_xinerama yes
-
-font pango:DejaVu Sans Mono-8
+font pango:Droid Sans Mono 12
 
 set $blue #005588
 set $gray1 #484848
@@ -22,7 +20,11 @@ bindsym $mod+Return exec /usr/bin/urxvt
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
+<<<<<<< HEAD
 bindsym $mod+x exec /usr/bin/dmenu_run -fn 'DejaVu Sans Mono-12'
+=======
+bindsym $mod+x exec /usr/bin/dmenu_run -fn 'Droid Sans Mono-12'
+>>>>>>> 361d4c6ebe5379b29c0fcce9e39f77e0e92f0369
 
 # change focus
 bindsym $mod+j focus left
@@ -114,7 +116,7 @@ bindsym $mod+Shift+C reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+E exit
+bindsym $mod+Shift+E exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3?' -b 'Yes' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -156,9 +158,11 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#exec i3status -c ~/.i3/i3status.conf | i3bar -dtop
+# use i3 to make uzbl appear to be tabbed
+for_window [class="Uzbl-core"] focus child, layout tabbed, focus
+
+# Make all urxvts use a 1-pixel border
+for_window [class="URxvt"] border 1pixel
 
 bar {
 	status_command	i3status

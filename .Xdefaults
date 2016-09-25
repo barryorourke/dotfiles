@@ -8,8 +8,8 @@ urxvt*inheritPixmap:    False
 urxvt*scrollBar:        False
 urxvt*saveLines:        10000
 urxvt*cursorBlink:      true
-urxvt*font:             xft:Bitstream Vera Sans Mono:size=10:antialias=true
-urxvt*boldfont:         xft:Bitstream Vera Sans Mono:size=10:antialias=true
+urxvt*font:             xft:Droid Sans Mono:size=12:antialias=true
+urxvt*boldfont:         xft:Droid Sans Mono:size=12:antialias=true
 urxvt*secondaryScroll:  true
 urxvt*pastableTabs:     true
 urxvt*depth:            32
