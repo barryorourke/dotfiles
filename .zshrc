@@ -8,7 +8,7 @@ source ~/repositories/github/dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # use my theme
-antigen theme ~/repositories/dotfiles/oh-my-zsh/themes barryorourke --no-local-clone
+antigen theme ~/repositories/github/dotfiles/oh-my-zsh/themes barryorourke --no-local-clone
 
 # apply some oh-my-zsh bundles
 antigen bundle extract
