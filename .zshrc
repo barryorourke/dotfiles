@@ -2,7 +2,7 @@
 DISABLE_AUTO_TITLE=true
 
 # use antigen to manage zsh
-source ~/repositories/dotfiles/antigen/antigen.zsh
+source ~/repositories/github/dotfiles/antigen/antigen.zsh
 
 # use oh-my-zsh
 antigen use oh-my-zsh
