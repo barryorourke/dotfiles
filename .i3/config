@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:Droid Sans Mono 12
+font pango:Noto Mono 12
 
 set $blue #005588
 set $gray1 #484848
