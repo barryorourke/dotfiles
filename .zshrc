@@ -32,7 +32,7 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 eval $(ssh-agent) > /dev/null
 
 # create default directory structure if it doesn't exist
-for D in tmp/{desktop,downloads,go} local
+for D in tmp/{desktop,downloads} local/go
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
@@ -41,4 +41,5 @@ done
 alias tmux="tmux -2"
 
 # Go!
-export GOPATH="$HOME/tmp/go"
+export GOPATH="$HOME/local/go"
+export PATH=${PATH}:/usr/lib/go-1.8/bin:${GOPATH}/bin
