@@ -42,4 +42,4 @@ alias tmux="tmux -2"
 
 # Go!
 export GOPATH="$HOME/local/go"
-export PATH=${PATH}:/usr/lib/go-1.8/bin:${GOPATH}/bin
+export PATH=/usr/lib/go-1.8/bin:${GOPATH}/bin:${PATH}
