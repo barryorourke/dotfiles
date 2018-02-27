@@ -2,13 +2,13 @@
 DISABLE_AUTO_TITLE=true
 
 # use antigen to manage zsh
-source ~/repositories/dotfiles/antigen/antigen.zsh
+source ~/repositories/github/dotfiles/antigen/antigen.zsh
 
 # use oh-my-zsh
 antigen use oh-my-zsh
 
 # use my theme
-antigen theme ~/repositories/dotfiles/oh-my-zsh/themes barryorourke --no-local-clone
+antigen theme ~/repositories/github/dotfiles/oh-my-zsh/themes barryorourke --no-local-clone
 
 # apply some oh-my-zsh bundles
 antigen bundle extract
@@ -32,7 +32,7 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 eval $(ssh-agent) > /dev/null
 
 # create default directory structure if it doesn't exist
-for D in tmp/{desktop,downloads,go} local
+for D in tmp/{desktop,downloads} local/go
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
@@ -41,4 +41,5 @@ done
 alias tmux="tmux -2"
 
 # Go!
-export GOPATH="$HOME/tmp/go"
+export GOPATH="$HOME/local/go"
+export PATH=/usr/lib/go-1.8/bin:${GOPATH}/bin:${PATH}

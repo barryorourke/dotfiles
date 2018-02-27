@@ -21,7 +21,7 @@ bindsym $mod+Return exec /usr/bin/urxvt
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+x exec /usr/bin/dmenu_run -fn 'Droid Sans Mono-12'
+bindsym $mod+x exec /usr/bin/dmenu_run -fn 'Noto Mono-12'
 
 # change focus
 bindsym $mod+j focus left
@@ -160,6 +160,7 @@ for_window [class="Uzbl-core"] focus child, layout tabbed, focus
 
 # Make all urxvts use a 1-pixel border
 for_window [class="URxvt"] border 1pixel
+for_window [class="Firefox"] border 1pixel
 
 bar {
 	status_command	i3status

@@ -19,5 +19,8 @@ xbindkeys &
 # sort out .Xdefaults
 xrdb -merge ~/.Xdefaults
 
+# GB keymap
+setxkbmap gb
+
 # start i3
 exec i3

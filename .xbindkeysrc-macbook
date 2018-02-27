@@ -1,8 +1,0 @@
-# Increase volume
-"amixer set Master playback 1+ unmute"
-   XF86AudioRaiseVolume
-# Decrease volume
-"amixer set Master playback 1-"
-   XF86AudioLowerVolume
-"amixer set Master toggle"
-   XF86AudioMute
