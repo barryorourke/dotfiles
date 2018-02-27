@@ -385,7 +385,7 @@ stay-open-folders=
 # Sets the time in seconds that Alpine will attempt to open a network
 # connection when checking for new unseen messages in an incoming folder.
 #  The default is 5.
-incoming-check-timeout=
+incoming-check-timeout=10
 
 # Sets the approximate number of seconds between checks for unseen messages
 # in incoming folders. The default is 180.
@@ -433,10 +433,10 @@ address-book=
 global-address-book=
 
 # Set by Alpine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=116.9
+last-time-prune-questioned=118.1
 
 # Set by Alpine; controls display of "new version" message.
-last-version-used=6.20
+last-version-used=6.21
 
 # This names the path to an alternative program, and any necessary arguments,
 # to be used in posting mail messages.  Example:
@@ -708,3 +708,6 @@ wp-state=
 
 # Web Alpine preferred width for message display in characters
 wp-columns=
+
+# List of directories that are preferred locations to save or export attachments.
+default-directories=

@@ -1,6 +1,7 @@
 set $mod Mod4
 
-font pango:Droid Sans Mono 12
+force_xinerama true
+font pango:Droid Sans Mono 8
 
 set $blue #005588
 set $gray1 #484848
