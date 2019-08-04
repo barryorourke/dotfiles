@@ -14,7 +14,7 @@ antigen theme ~/repositories/github/dotfiles/oh-my-zsh/themes barryorourke --no-
 antigen bundle extract
 antigen bundle git
 antigen bundle golang
-antigen bundle history-substring-search
+#antigen bundle history-substring-search
 antigen bundle vi-mode
 
 # apply some other bundles
