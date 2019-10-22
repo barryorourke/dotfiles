@@ -10,4 +10,4 @@ syntax on
 filetype plugin indent on
 
 colorscheme base16-default-dark
-let g:airline_theme='serene'
+let g:airline_theme='base16_ashes'
