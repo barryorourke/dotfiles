@@ -28,22 +28,8 @@ antigen apply
 bindkey -M viins '^r' history-incremental-search-backward
 bindkey -M vicmd '^r' history-incremental-search-backward
 
-# start ssh-agent
-eval $(ssh-agent) > /dev/null
-
 # create default directory structure if it doesn't exist
-for D in tmp/{desktop,downloads} local/go
+for D in tmp/{desktop,downloads}
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
-
-# aliases
-alias tmux="tmux -2"
-
-# Go!
-export GOPATH="$HOME/local/go"
-export PATH=/usr/lib/go-1.8/bin:${GOPATH}/bin:${PATH}
-
-# added by travis gem
-[ -f /home/barry/.travis/travis.sh ] && source /home/barry/.travis/travis.sh
-export PATH=/home/barry/local/anaconda/bin:$PATH
