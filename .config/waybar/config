@@ -1,0 +1,21 @@
+{
+    "layer": "top",
+    "height": 32,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-right": ["network", "battery", "clock", "tray"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "clock": {
+        "format": "{: %Y-%m-%d %H:%M:%S}"
+    }
+}
