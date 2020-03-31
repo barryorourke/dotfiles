@@ -14,7 +14,7 @@ set $right l
 set $term kitty
 
 # Application launcher
-set $menu dmenu_path -fn 'Noto Mono-12' | dmenu -fn 'Noto Mono-12' | xargs swaymsg exec --
+set $menu dmenu_path -fn 'Terminus-16' | dmenu -fn 'Terminus-16' | xargs swaymsg exec --
 
 # Borders & Gaps
 default_border pixel 1px
