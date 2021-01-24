@@ -158,6 +158,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+for_window [class="."] inhibit_idle fullscreen
+
 #
 # Status Bar:
 #
