@@ -1,8 +1,11 @@
 # stop tmux from changing titles
 DISABLE_AUTO_TITLE=true
 
+# source /etc/profile in order to run /etc/profile.d scripts
+emulate sh -c 'source /etc/profile'
+
 # use antigen to manage zsh
-source ~/repositories/dotfiles/antigen/antigen.zsh
+source ~/repositories/github/dotfiles/antigen/antigen.zsh
 
 # use oh-my-zsh
 antigen use oh-my-zsh
