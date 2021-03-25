@@ -36,3 +36,6 @@ for D in tmp/{desktop,downloads}
 do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
+
+# use nvim on archlinux
+[ "$(grep archlinux /etc/os-release)" ] && export EDITOR=nvim
