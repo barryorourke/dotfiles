@@ -37,5 +37,4 @@ do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
 
-# use nvim on archlinux
-[ "$(grep archlinux /etc/os-release)" ] && export EDITOR=nvim
+export PATH="~/go/bin:/usr/lib/go-1.14/bin:${PATH}"
