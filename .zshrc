@@ -37,4 +37,4 @@ do
   [ ! -d ~/${D} ] && mkdir -p ~/${D}
 done
 
-export PATH="~/go/bin:/usr/lib/go-1.14/bin:${PATH}"
+export PATH="/home/${USER}/go/bin:/usr/lib/go-1.14/bin:${PATH}"
